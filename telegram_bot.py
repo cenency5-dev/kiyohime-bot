@@ -15,8 +15,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [InlineKeyboardButton("🤖 AI Chat", callback_data="menu_ai")]
     ]
     await update.message.reply_text(
-        "👋 Selamat datang di bot!
-Silakan pilih menu:",
+        """👋 Selamat datang di bot!
+Silakan pilih menu:""",
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
