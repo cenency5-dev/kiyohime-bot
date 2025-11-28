@@ -54,9 +54,9 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await query.answer()
 
     if query.data == "menu_katalog":
-        await query.edit_message_text("📦 Daftar katalog:
+        await query.edit_message_text("""📦 Daftar katalog:
 1. Produk A
-2. Produk B")
+2. Produk B""")
     elif query.data == "menu_ai":
         await query.edit_message_text("Ketik pesan apapun untuk mulai chat dengan AI.")
 
