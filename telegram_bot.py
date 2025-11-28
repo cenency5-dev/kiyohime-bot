@@ -1,7 +1,8 @@
 import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
-import openai
+import openai = None
+        print("⚠️ Modul openai tidak ditemukan, AI Chat dinonaktifkan.")
 import asyncio
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
